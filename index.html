@@ -15,7 +15,18 @@
   </head>
   <body>
 
-    <!-- START:: Nav Section -->
+    <!-- START:: Nav Section --> 
+    <!-- START:: Mobile Search Box -->
+    <section id="mobile_search_box" class="container-fluid bg-light p-5">
+
+      <div style="float: right;"><a href="#" id="close-search-box"><i class="fa-solid fa-xmark"></i></a></div>  
+      <h5 class="text-center mb-2">Search</h5>
+      <div class="form-outline" data-mdb-input-init>
+        <input type="search" id="form1" class="form-control" placeholder="Search Your Item " aria-label="Search" />
+      </div>
+    </section>
+    <!-- END:: Mobile Search Box -->
+
     <!-- START:: Top Header -->
     <section class="container-fluid bg-light py-2">
         <div class="container d-flex justify-content-between">
@@ -98,7 +109,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="allproducts.html">All Products</a>
                         <a class="dropdown-item" href="single-products.html">Product Details</a>
-                        <a href="checkcout">check Out</a>
+                        <a class="dropdown-item" href="checkout">check Out</a>
                     </div>
                 </div>
             </div>
@@ -244,33 +255,35 @@
         <div class="row">
             <div class="col-lg-6 mt-4">
 
-                <div class="card">
+                <div class="card discount-card">
                     <img src="https://via.placeholder.com/80x30" class="img-fluid"/>
                     <div class="card-img-overlay">
-                       <h4 class="text-primary" style="float: right;">50% OFF</h4>
+                       <h4 class="text-primary discount-card-title" style="float: right;">50% OFF</h4>
 
                        <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 10%;">
                             <h4 class="card-title">Free Shipping</h4>
                             <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">Shop</a>
+                            <a href="#" class="btn btn-primary btn-sm">Shop</a>
                        </div>
+
                     </div>
                 </div>
 
             </div>
             
-            <div class="col-lg-6 mt-4">
+            <div class="col-lg-6 mt-4 discount-card">
 
                 <div class="card">
                     <img src="https://via.placeholder.com/80x30" class="img-fluid"/>
                     <div class="card-img-overlay">
-                       <h4 class="text-primary" style="float: right;">50% OFF</h4>
+                       <h4 class="text-primary discount-card-title" style="float: right;">50% OFF</h4>
 
                        <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 10%;">
                             <h4 class="card-title">Free Shipping</h4>
                             <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">Shop</a>
+                            <a href="#" class="btn btn-primary btn-sm">Shop</a>
                        </div>
+
                     </div>
                 </div>
                 
@@ -287,142 +300,193 @@
             
             <h1 class="display-4 text-center mb-4"> Shop By Category</h1>
 
-            <div class="row">
+            <div class="shop-by-category" style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
                 
-                <div class="col-md-4 col-sm-6 mb-4 home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                <div class="home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                 <div class="home-text-overlay"><h2>Category Name</h2></div></div>
                 
-                <div class="col-md-4 col-sm-6 mb-4 home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                <div class="home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                 <div class="home-text-overlay"><h2>Category Name</h2></div></div>
 
-                <div class="col-md-4 col-sm-6 mb-4 home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                <div class="home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                 <div class="home-text-overlay"><h2>Category Name</h2></div></div>
 
-                <div class="col-md-4 col-sm-6 mb-4 home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                <div class="home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                 <div class="home-text-overlay"><h2>Category Name</h2></div></div>
 
-                <div class="col-md-4 col-sm-6 mb-4 home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                <div class="home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                 <div class="home-text-overlay"><h2>Category Name</h2></div></div>
 
-                <div class="col-md-4 col-sm-6 mb-4 home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                <div class="home-image-container"><img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                 <div class="home-text-overlay"><h2>Category Name</h2></div></div>
               
            </div>
     </section>
     <!-- END:: Shop by Category -->
 
-    <!-- START:: Product Slider -->
-    <section class="container-fluid">
+    <!-- START:: Product Tabs -->
+    <section id = "collection" class = "py-5">
+      <div class = "container">
 
-        <h1 class="display-4 text-center mb-4"> Products</h1>
+        <h1 class="display-4 text-center mb-4"> New Items</h1>
 
-        <div class="col-lg-12">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="cards-wrapper">
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                        
-                      </div>
-                    </div>
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                        
-                      </div>
-                    </div>
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="cards-wrapper">
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                        
-                      </div>
-                    </div>
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                      </div>
-                    </div>
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="cards-wrapper">
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                      </div>
-                    </div>
-                    <div class="card my-slider-cards">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                      </div>
-                    </div>
-                    <div class="card my-slider-cards">
-                      <img src="http://via.placeholder.com/350x230" class="img-fluid">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                          content.</p>
-                      
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div class = "row g-0">
+              <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                  <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                  <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Heading</button>
+                  <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Heading</button>
+                  <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Heading</button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            
-            
+
+              <div class = "collection-list mt-4 row gx-0 gy-3">
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+              </div>
           </div>
-    </section>
-    <!-- END:: Product Slider -->
+      </div>
+  </section>
+    <!-- END:: Product Tabs -->
 
     <!-- START:: Sales Banner -->
     <section class="container-fluid sales-banner mt-4">
@@ -582,16 +646,17 @@
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
   </footer>
     <!-- END:: Footer -->
 
+    <script src="assets/js/jquery-3.6.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="assets/js/jquery-1.12.1.min.js"></script>
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -599,9 +664,26 @@
     $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds
-      items : 4,
+      items : 6,
       itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
+      itemsDesktopSmall : [979,3],
+      responsive: {
+        0: {
+          items: 2
+        },
+        376: {
+          items: 2
+        },
+        768: {
+          items: 4
+        },
+        1024: {
+          items: 5
+        },
+        1200: {
+          items: 6
+        }
+      }
     });
     });
     </script>

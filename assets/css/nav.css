@@ -53,17 +53,33 @@ a, a:focus, a:active{
 .box-shadow-right {
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
   }
+
+#mobile_search_box{
+    position: absolute;
+    top: 10px;
+    z-index: 99;
+    display: none;
+}
+
+.discount-card img{
+    width: 100% !important;
+}
+
 @media (max-width: 577px){
-    .middle-header-search, .default-search, .wishlist_heart, .add_cart, .navbar-pages{
+    .middle-header-search, .wishlist_heart, .add_cart, .navbar-pages{
         display: none !important;
     }
 
-    #nav-toggle{
+    #nav-toggle, .default-search{
         display: block !important;  
     }
 
     .company-logo{
         margin-left: 25px;
+    }
+
+    #mobile_search_box.active{
+        display: block;
     }
 }
 
@@ -71,7 +87,16 @@ a, a:focus, a:active{
     .top-nav-icons-email{
         display: none !important;
     } 
-    .top-nav-icons{
+    /* .top-nav-icons{
+        font-size: small;
+    } */
+
+    .discount-card img{
+        width: 100% !important;
+        height: 50vh;
+    }
+
+    .discount-card-title{
         font-size: small;
     }
 }

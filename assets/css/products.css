@@ -363,8 +363,6 @@ img{
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  
-  
   .btn_3:hover {
     background-color: transparent;
     color: black;

@@ -193,26 +193,447 @@
     <!-- END:: Mobile Menu -->
     <!-- END:: Nav Section -->
 
-    <section class="container-fluid mt-3">
+    <!-- BreadCrumb -->
+    <section class="bc-banner mt-3">
+        <div>
+            <h1>Page Name</h1>
+            <p>Home > Page Name</p>
+        </div>
+    </section>
+    <!-- BreadCrumb -->
+
+    <section class="container mt-5">
         <div class="row">
-            <section class="col-sm-6 col-lg-3 border">
+            <section class="col-lg-4 col-xl-3">
                 
-                <div class="container border">
-                    categories and filters
+                <div class="container bg-light py-4">
+                    <!-- category btns -->
+                    <section class="category-buttons">
+                        <h4>Category</h4>
+                        <!-- category btn -->
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="category.html">Category 1</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 2</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 3</a></li>
+                                <li class="dropdown-item"><a href="allproducts.html">Show All</a></li>
+                            </ul>
+                        </div>
+                        <!-- category btn -->
+                        <!-- category btn -->
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="category.html">Category 1</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 2</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 3</a></li>
+                                <li class="dropdown-item"><a href="allproducts.html">Show All</a></li>
+                            </ul>
+                        </div>
+                        <!-- category btn -->
+                        <!-- category btn -->
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="category.html">Category 1</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 2</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 3</a></li>
+                                <li class="dropdown-item"><a href="allproducts.html">Show All</a></li>
+                            </ul>
+                        </div>
+                        <!-- category btn -->
+                        <!-- category btn -->
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="category.html">Category 1</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 2</a></li>
+                                <li class="dropdown-item"><a href="category.html">Category 3</a></li>
+                                <li class="dropdown-item"><a href="allproducts.html">Show All</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- category btns -->
+
+                    <!-- Pick Color -->
+                    <div class="color-pick mt-3">
+                        <h4>Color Filter</h4>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Pick a color</option>
+                            <option value="1">Red</option>
+                            <option value="2">Green</option>
+                            <option value="3">Blue</option>
+                          </select>
+                    </div>
+                    <!-- Pick Color -->
+                    
+                    <!-- Price filter -->
+                    <div class="price-range mt-4">
+                        <h4>Price Range</h4>
+                        <div class="range" data-mdb-range-init>
+                        <input type="range" class="form-range" min="0" max="1000" id="customRange2" />
+                        </div>
+                    </div>
+                    <!-- Price filter -->
+
+                    <button class="mt-4 btn btn-primary">Filter</button>
                 </div>
-            
+        
             </section>
 
-            <section class="col-sm-6 col-lg-9 border">
+            <section class="col-lg-8 col-xl-9">
                 
-                <div class="container bg-light border">
-                    top Stuff goes here
-                </div>
+                <div class="container bg-light p-2">
+                    <section class="products-top">
+                        <!-- Products -->
+                        <div><p class="lead"> 10000 Products </p> </div>
+                        <!-- Sort -->
+                        <div class="Sort products-top-sort">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected disabled>Sort</option>
+                                <option value="1">Price</option>
+                                <option value="2">Category</option>
+                                <option value="3">Color</option>
+                              </select>
+                        </div>
+                        <!-- Search -->
+                        <div class="input-group rounded products-top-search">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <span class="input-group-text border-0" id="search-addon">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </div>
 
-                <div class="container mt-2 border">
-                    products goes here
+                    </section>
                 </div>
-
+                    <!-- START:: 8 Products -->
+                    <section class="container mt-2">
+                        <div class = "collection-list mt-4 row gx-0 gy-3">
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END:: 8 Products -->
+                    <!-- START:: 8 Products -->
+                    <section class="container mt-2">
+                        <div class = "collection-list mt-4 row gx-0 gy-3">
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                    
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                                <div class = "collection-img position-relative">
+                                <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <div class = "rating mt-3">
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                        <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                    </div>
+                                    <p class = "text-capitalize my-1">gray shirt</p>
+                                    <span class = "fw-bold">$ 45.50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END:: 8 Products -->
+                    <!-- Pagination -->
+                    <div class="d-flex justify-content-center mt-4">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                    <!-- Pagination -->
             </section>
         </div>
     </section>
@@ -345,35 +766,5 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/jquery-1.12.1.min.js"></script>
-    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script>
-    $(document).ready(function() {
-    $(".owl-carousel").owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
-      items : 6,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3],
-      responsive: {
-        0: {
-          items: 2
-        },
-        376: {
-          items: 2
-        },
-        768: {
-          items: 4
-        },
-        1024: {
-          items: 5
-        },
-        1200: {
-          items: 6
-        }
-      }
-    });
-    });
-    </script>
 </body>
 </html>

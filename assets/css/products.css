@@ -248,9 +248,9 @@ img{
   
   
   .product_description_area .nav.nav-tabs li a.active {
-    background: blue;
+    background: #0d6efd;
     color: #fff;
-    border-color: blue;
+    border-color: #0d6efd;
   }
   
   
@@ -346,4 +346,27 @@ img{
   
   .product_description_area .tab-content .table tbody tr:first-child td {
     border-top: 0px;
+  }
+
+  .btn_3 {
+    display: inline-block;
+    padding: 9px 42px;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1px solid #0d6efd;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  
+  .btn_3:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #0d6efd;
   }

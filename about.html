@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Owl css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   </head>
   <body>
 
@@ -195,8 +197,8 @@
     <!-- BreadCrumb -->
     <section class="bc-banner mt-3">
         <div>
-            <h1>Contact</h1>
-            <p>Home > Contact</p>
+            <h1>About</h1>
+            <p>Home > About</p>
         </div>
     </section>
     <!-- BreadCrumb -->
@@ -211,7 +213,8 @@
                     </div>
                     <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
-                    <button class="btn_3">Call Us Now</button>
+                    <button class="btn_3" onclick="window.location.href='contact.html'">Contact Us</button>
+
                 </div>
                 <div class = "col-lg-6 order-1">
                     <img src="assets/images/about_us.jpg" alt = "about" class = "img-fluid">
@@ -221,109 +224,125 @@
     </section>
     <!-- END:: About -->
 
-    <!-- START:: Info -->
-    <section class="container-fluid bg-light mb-4">
-      <div class="container p-5">
-        <div class = "title pt-3">
-          <h2 class = "position-relative ms-4 text-center">Heading Goes Here</h2>
-        </div>
-        <div class="mt-4">
-          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, mollitia, fuga quod animi magnam nesciunt vitae enim aliquid commodi cupiditate reiciendis quaerat eveniet impedit minus nobis? Porro voluptates cum iusto?</p>
-          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, mollitia, fuga quod animi magnam nesciunt vitae enim aliquid commodi cupiditate reiciendis quaerat eveniet impedit minus nobis? Porro voluptates cum iusto?</p>
-          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, mollitia, fuga quod animi magnam nesciunt vitae enim aliquid commodi cupiditate reiciendis quaerat eveniet impedit minus nobis? Porro voluptates cum iusto?</p>
-        </div>
-      </div>
-
-
-    </section>
-    <!-- END:: Info -->
-    
-    <!-- START:: Map and Contact Form -->
-    <section class="container-fluid">
-      <!-- Icons wala section -->
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-              <!-- icon -->
-              <div class="icone-image">
-                <img src="assets/images/menu.png" alt="grid">
-              </div>
-              <!-- description -->
-              <div class="mt-2 d-flex flex-column justify-content-center align-items-center" style="line-height: 2px;">
-                <h4>Get In Touch</h4>
-                <p class="text-secondary">P: 000 000 000</p>
-                <p class="text-secondary">E: dina@email.com</p>
-              </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-            <!-- icon -->
-            <div class="icone-image">
-              <img src="assets/images/24-hours.png" alt="24/7">
-            </div>
-            <!-- description -->
-            <div class="mt-2 d-flex flex-column justify-content-center align-items-center" style="line-height: 2px;">
-              <h4>24/7 Support</h4>
-              <p class="text-secondary">Lorem, ipsum dolor.</p>
-              <p class="text-secondary">000 000 000</p>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
-            <!-- icon -->
-            <div class="icone-image">
-              <img src="assets/images/location.png" alt="location">
-            </div>
-            <!-- description -->
-            <div class="mt-2 d-flex flex-column justify-content-center align-items-center" style="line-height: 2px;">
-              <h4>Our Location</h4>
-              <p class="text-secondary">street, something</p>
-              <p class="text-secondary">address, code of city</p>
-            </div>
-          </div>
-
-        </div>
-      
-      </div>
-      <!-- Contact form -->
-      <div class="container mt-4">
-        
-        <div class="row">
-          <div class="col-lg-6">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.865308490466!2d-0.024290844705197046!3d51.496103327804384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602c0671641a1%3A0x266a92454825f03e!2s10%2C%2016%20Tiller%20Rd%2C%20London%20E14%208PX%2C%20UK!5e0!3m2!1sen!2s!4v1701078741032!5m2!1sen!2s"
-            width="100%" height="95%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          
-          <div class="col-lg-6">
+    <!-- info -->
+    <section class="container-fluid mt-3 mb-5 bg-light p-4">
+        <div class="container">
             
-            <form action="#" method="post">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" required>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" required>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn_3">Submit</button>
-            </form>
-
-          </div>
+            <div class = "title pt-3 d-flex justify-content-center">
+                <h2 class = "position-relative ms-4">Heading Goes Here</h2>
+            </div>
+        
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore perferendis aut obcaecati, reprehenderit excepturi? Aliquam nostrum aperiam praesentium ea! Molestiae, id voluptatibus alias nisi consequatur asperiores perspiciatis esse mollitia.
+            </p>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore perferendis aut obcaecati, reprehenderit excepturi? Aliquam nostrum aperiam praesentium ea! Molestiae, id voluptatibus alias nisi consequatur asperiores perspiciatis esse mollitia.
+            </p>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore perferendis aut obcaecati, reprehenderit excepturi? Aliquam nostrum aperiam praesentium ea! Molestiae, id voluptatibus alias nisi consequatur asperiores perspiciatis esse mollitia.
+            </p>
         </div>
-
-      </div>
     </section>
-    <!-- END:: Map and Contact Form -->
+    <!-- info -->
 
-   <!-- START:: Footer -->
-  <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- START:: Images with text -->
+    <!-- 1 -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+          
+            <div class="col-md-6 mt-3 order-2 order-md-1">
+                <h2 class="text-capitalize">We Have Best Products</h2>
+                <h3>Simple and Creative</h3>
+                <hr style="color: black; width: 5em; margin-left: 2px; font-weight: bold;">
+                <p>Ut leo. Vivamus aliquet elit ac nisl. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac enim.
+                Sed cursus turpis vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Fusce id purus.In consectetuer turpis ut velit. Suspendisse feugiat. Nam quam nunc, blandit
+                vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam commodo suscipit quam.
+
+                Suspendisse feugiat. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam
+                commodo suscipit quam.</p>
+           </div>
+          
+          <div class="col-md-6 order-1 order-md-2">
+            <!-- "image-hover" class to the images you want to have the hover effect -->
+            <img src="https://via.placeholder.com/500x330" alt="Picture" class="img-fluid image-hover">
+          </div>
+
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+          
+            <div class="col-md-6 order-1">
+                <!-- "image-hover" class to the images you want to have the hover effect -->
+                <img src="https://via.placeholder.com/500x330" alt="Picture" class="img-fluid image-hover">
+            </div>
+            
+            <div class="col-md-6 mt-3 order-2">
+                <h2 class="text-capitalize">We Have Best Products</h2>
+                <h3>Simple and Creative</h3>
+                <hr style="color: black; width: 5em; margin-left: 2px; font-weight: bold;">
+                <p>Ut leo. Vivamus aliquet elit ac nisl. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac enim.
+                Sed cursus turpis vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Fusce id purus.In consectetuer turpis ut velit. Suspendisse feugiat. Nam quam nunc, blandit
+                vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam commodo suscipit quam.
+
+                Suspendisse feugiat. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam
+                commodo suscipit quam.</p>
+           </div>
+    
+        </div>
+    </div>
+    <!-- END:: Images with text -->
+
+    <!-- info -->
+    <section class="container-fluid mt-3 mb-5 bg-light p-4">
+        <div class="container">
+            
+            <div class = "title pt-3 d-flex justify-content-center">
+                <h2 class = "position-relative ms-4">Heading Goes Here</h2>
+            </div>
+        
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore perferendis aut obcaecati, reprehenderit excepturi? Aliquam nostrum aperiam praesentium ea! Molestiae, id voluptatibus alias nisi consequatur asperiores perspiciatis esse mollitia.
+            </p>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore perferendis aut obcaecati, reprehenderit excepturi? Aliquam nostrum aperiam praesentium ea! Molestiae, id voluptatibus alias nisi consequatur asperiores perspiciatis esse mollitia.
+            </p>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore perferendis aut obcaecati, reprehenderit excepturi? Aliquam nostrum aperiam praesentium ea! Molestiae, id voluptatibus alias nisi consequatur asperiores perspiciatis esse mollitia.
+            </p>
+        </div>
+    </section>
+    <!-- info -->
+
+    <!-- START:: Brands -->
+    <section class="mt-4">
+        <div class = "title pt-3 d-flex justify-content-center">
+            <h2 class = "position-relative ms-4">Our Brands</h2>
+        </div>
+        
+        <div class="container">
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus recusandae quidem dolorum dolorem! Nemo sapiente architecto corporis tempora consectetur, mollitia adipisci repudiandae. Dolores esse temporibus consequuntur et est repellat perspiciatis.</p>
+        </div>
+        
+        <div class="owl-carousel container">      
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+            <div class="item"><img src="http://via.placeholder.com/50x50" class="img-fluid" alt="brand"></div>
+        </div>
+      </section>
+      <!-- END:: Brands -->
+
+    <!-- START:: Footer -->
+ <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
@@ -449,5 +468,36 @@
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/jquery-1.12.1.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 6,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+      responsive: {
+        0: {
+          items: 2
+        },
+        376: {
+          items: 2
+        },
+        768: {
+          items: 4
+        },
+        1024: {
+          items: 5
+        },
+        1200: {
+          items: 6
+        }
+      }
+    });
+    });
+    </script>
 </body>
 </html>

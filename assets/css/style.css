@@ -334,3 +334,10 @@ i {
   color: black;
   border: 1px solid var(--blue);
 }
+
+/* About */
+.image-hover:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}

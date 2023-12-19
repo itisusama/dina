@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+
+    <!-- START:: Nav Section --> 
+    <!-- START:: Mobile Search Box -->
+    <section id="mobile_search_box" class="container-fluid bg-light p-5">
+
+      <div style="float: right;"><a href="#" id="close-search-box"><i class="fa-solid fa-xmark"></i></a></div>  
+      <h5 class="text-center mb-2">Search</h5>
+      <div class="form-outline" data-mdb-input-init>
+        <input type="search" id="form1" class="form-control" placeholder="Search Your Item " aria-label="Search" />
+      </div>
+    </section>
+    <!-- END:: Mobile Search Box -->
+
+    <!-- START:: Top Header -->
+    <section class="container-fluid bg-light py-2">
+        <div class="container d-flex justify-content-between">
+            <!-- Icons -->
+            <div class="d-flex gap-2 top-nav-icons">
+                <!-- Right Icons -->
+                <div><i class="fa-solid fa-phone"></i> 000-0000-0000</div>
+                <!-- Left Icons -->
+                <div class="top-nav-icons-email"><i class="fa-solid fa-envelope"></i> dina@email.com</div>
+            </div>
+            <!-- Icons -->
+
+            <!-- Pages and currency -->
+                <select style="height: 30px;">
+                    <option value="1">USD</option>
+                    <option value="2">EUR</option>
+                    <option value="3">GBP</option>
+                </select>
+            </div>
+            <!-- Pages and currency -->    
+        </div>
+    </section>
+    <!-- END:: Top Header -->
+    <!-- START:: Middle Header -->
+    <section class="container-fluid mt-2">
+        <div class=" container d-flex justify-content-between align-items-center">
+            <!-- Nav Toggle -->
+            <a href="#" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+            <!-- Nav Toggle -->
+            <!-- LOGO -->
+            <div class="company-logo">
+                <img src="http://via.placeholder.com/70x70" alt="company-logo">
+            </div>
+            <!-- Search -->
+            <div class="middle-header-search">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </div>
+            <!-- Icons -->
+            <div class="middle-header-icons d-flex gap-2">
+                <div><a href="#" id="mobile_search"><i class="fa-solid mt-1 fa-magnifying-glass default-search"></i></a></div>
+                <div><a href="wishlist.html"><i class="fa-regular fa-heart"></i><span class="wishlist_heart"> Wishlist</span></a></div>
+                <div><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="add_cart"> Cart</span></a></div>
+            </div>
+        </div>
+    </section>
+    <!-- END:: Middle Header -->
+
+    <!-- START:: Nav Pages -->
+    <Section class="container-fluid navbar-pages">
+        <div class="container mt-4 d-flex gap-4">
+            <!-- 1 -->
+            <div> <a href="index.html">Home</a> </div>
+            <!-- 2 -->
+            <div class="nav-item">
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Category
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="category.html">Category Item</a>
+                        <a class="dropdown-item" href="category.html">Category Item</a>
+                        <a class="dropdown-item" href="category.html">Category Item</a>
+                        <a class="dropdown-item" href="category.html">See All</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="nav-item">
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="allproducts.html">All Products</a>
+                        <a class="dropdown-item" href="single-products.html">Product Details</a>
+                        <a class="dropdown-item" href="checkout">check Out</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="nav-item">
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ourcompany.html">Our Company</a>
+                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                        <a class="dropdown-item" href="policy.html">Policy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div><a href="contact.html">Contact</a></div>
+            <!-- 6 -->
+        </div>
+    </Section>
+    <!-- START:: Nav Pages -->
+
+    <!-- START:: Mobile Menu -->
+    <div class="mobile-menu bg-light w-75 p-3 box-shadow-right" id="mobile-menu">
+        <div style="float: right;"><a href="#" id="close-nav"><i class="fa-solid fa-xmark"></i></a></div>
+
+        <div class="container mt-4">
+            <!-- 1 -->
+            <div> <a href="index.html">Home</a> </div>
+            <!-- 2 -->
+            <div class="dropdown">
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <a href="category.html">Category</a>
+                    <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                    </span>
+                </div>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="category.html">Category Item</a>
+                    <a class="dropdown-item" href="category.html">Category Item</a>
+                    <a class="dropdown-item" href="category.html">Category Item</a>
+                    <a class="dropdown-item" href="category.html">See All</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="dropdown">
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <a href="shop.html">Shop</a>
+                    <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                    </span>
+                </div>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="allproducts.html">All Products</a>
+                    <a class="dropdown-item" href="single-products.html">Product Details</a>
+                    <a href="checkcout">check Out</a>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="dropdown">
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <a href="About.html">About</a>
+                    <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                    </span>
+                </div>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="ourcompany.html">Our Company</a>
+                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                    <a class="dropdown-item" href="policy.html">Policy</a>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div><a href="contact.html">Contact</a></div>
+            <!-- 6 -->
+        </div>
+    </div>
+    <!-- END:: Mobile Menu -->
+    <!-- END:: Nav Section -->
+
+    <!-- BreadCrumb -->
+    <section class="bc-banner mt-3">
+        <div>
+            <h1>Contact</h1>
+            <p>Home > Contact</p>
+        </div>
+    </section>
+    <!-- BreadCrumb -->
+
+    <!-- START:: About -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-2 text-center text-lg-start">
+                    <div class = "title pt-3">
+                        <h2 class = "position-relative ms-4">Our Company</h2>
+                    </div>
+                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                    <button class="btn_3">Call Us Now</button>
+                </div>
+                <div class = "col-lg-6 order-1">
+                    <img src="assets/images/about_us.jpg" alt = "about" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END:: About -->
+
+    <!-- START:: Map and Contact Form -->
+    <section class="container-fluid">
+      <!-- Icons wala section -->
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+              <!-- icon -->
+              <div class="icone-image">
+                <img src="assets/images/menu.png" alt="grid">
+              </div>
+              <!-- description -->
+              <div class="mt-2 d-flex flex-column justify-content-center align-items-center" style="line-height: 2px;">
+                <h4>Get In Touch</h4>
+                <p class="text-secondary">P: 000 000 000</p>
+                <p class="text-secondary">E: dina@email.com</p>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <!-- icon -->
+            <div class="icone-image">
+              <img src="assets/images/24-hours.png" alt="24/7">
+            </div>
+            <!-- description -->
+            <div class="mt-2 d-flex flex-column justify-content-center align-items-center" style="line-height: 2px;">
+              <h4>24/7 Support</h4>
+              <p class="text-secondary">Lorem, ipsum dolor.</p>
+              <p class="text-secondary">000 000 000</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <!-- icon -->
+            <div class="icone-image">
+              <img src="assets/images/location.png" alt="location">
+            </div>
+            <!-- description -->
+            <div class="mt-2 d-flex flex-column justify-content-center align-items-center" style="line-height: 2px;">
+              <h4>Our Location</h4>
+              <p class="text-secondary">street, something</p>
+              <p class="text-secondary">address, code of city</p>
+            </div>
+          </div>
+
+        </div>
+      
+      </div>
+      <!-- Contact form -->
+      <div class="container mt-4">
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.865308490466!2d-0.024290844705197046!3d51.496103327804384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602c0671641a1%3A0x266a92454825f03e!2s10%2C%2016%20Tiller%20Rd%2C%20London%20E14%208PX%2C%20UK!5e0!3m2!1sen!2s!4v1701078741032!5m2!1sen!2s"
+            width="100%" height="95%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
+          <div class="col-lg-6">
+            
+            <form action="#" method="post">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn_3">Submit</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END:: Map and Contact Form -->
+
+   <!-- START:: Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <!-- END:: Footer -->
+
+    <script src="assets/js/jquery-3.6.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

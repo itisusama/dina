@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+  --blue: #0d6efd;
+}
 /* Home Overlay */
 .home-image-container {
     position: relative;
@@ -91,6 +95,15 @@
   @media (max-width: 425px){
     .card-title, .card-text, .text-center{
     font-size: 3.5vw;
+  }
+
+  .popular-images-container >div{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .popular-images-container >div img{
+    width: 100% !important;
   }
   }
   
@@ -195,6 +208,22 @@
         display: none;
     }
 }
+
+.popular-images-container >div img{
+  width: 25%;
+}
+
+@media (max-width: 991px){
+  .popular-images-container >div img{
+    width: 35%;
+  }
+
+  .popular-images-container{
+    display: flex;
+    gap: 2rem;
+    margin: 10px 0;
+  }
+}
 /* Banner */
 
 /* Owl */
@@ -215,9 +244,9 @@
 
 /* collection */
 .active-filter-btn{
-  background-color: #0d6efd !important;
+  background-color: var(--blue) !important;
   color: #fff!important;
-  border-color: #0d6efd !important;
+  border-color: var(--blue) !important;
 }
 .filter-button-group{
   color: #fff!important;
@@ -261,40 +290,47 @@
 
 /* Bread Crumb */
 .bc-banner{
-  background-image: url("https://international.bihk.de/fileadmin/eigene_dateien/auwi_bayern/eigene_dateien/images/header/Zoll.jpg");
-  width: 100%;
+  /* background-image: url("https://international.bihk.de/fileadmin/eigene_dateien/auwi_bayern/eigene_dateien/images/header/Zoll.jpg"); */
+  /* background-image: url("https://via.placeholder.com/1366x400"); */
+  background-image: url("/assets/images/bg.svg");
+  position: relative;
+  background-repeat: no-repeat;
   height: 50vh;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  text-shadow: 2px 2px white;
+.bc-banner >div{
+  position: absolute;
 }
 
 i {
-  color: #0d6efd;
+  color: var(--blue);
 }
 
 .btn_3 {
   display: inline-block;
   padding: 9px 42px;
   border-radius: 5px;
-  background-color: #0d6efd;
-  border: 1px solid #0d6efd;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
   font-size: 15px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
-  border: 1px solid #0d6efd;
+  border: 1px solid var(--blue);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .btn_3:hover {
   background-color: transparent;
   color: black;
-  border: 1px solid #0d6efd;
+  border: 1px solid var(--blue);
 }

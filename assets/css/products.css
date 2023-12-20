@@ -375,3 +375,11 @@ img{
     color: black;
     border: 1px solid #0d6efd;
   }
+
+  @media (max-width: 425px){
+    .footer-grid-column{
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: start !important;
+    }
+  }

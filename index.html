@@ -326,24 +326,33 @@
       </section>
     <!-- END:: Shop by Category -->
 
-    <!-- START:: Product Tabs -->
-    <section id = "collection" class = "py-5">
-      <div class = "container">
-
-        <h1 class="display-4 text-center mb-4"> New Items</h1>
-
-          <div class = "row g-0">
-              <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                  <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
-                  <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Heading</button>
-                  <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Heading</button>
-                  <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Heading</button>
-              </div>
-
+    <!-- START:: New Product Tabs -->
+    <section class="container-fluid mt-4">
+      <div class="container">
+        
+        <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-item1-tab" data-bs-toggle="pill" data-bs-target="#pills-item1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-item2-tab" data-bs-toggle="pill" data-bs-target="#pills-item2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Heading</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-item3-tab" data-bs-toggle="pill" data-bs-target="#pills-item3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Heading</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-item4-tab" data-bs-toggle="pill" data-bs-target="#pills-item4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">heading</button>
+          </li>
+        </ul>
+        
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-item1" role="tabpanel" aria-labelledby="pills-item1-tab" tabindex="0">
+            <!-- START:: 8 Products -->
+            <section class="container mt-2">
               <div class = "collection-list mt-4 row gx-0 gy-3">
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -356,12 +365,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+                          
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -374,12 +389,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -392,12 +413,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -410,12 +437,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -428,12 +461,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -446,12 +485,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -464,12 +509,18 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
-
+          
                   <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                       <div class = "collection-img position-relative">
-                        <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
                           <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                       </div>
                       <div class = "text-center">
@@ -482,13 +533,311 @@
                           </div>
                           <p class = "text-capitalize my-1">gray shirt</p>
                           <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
                       </div>
                   </div>
               </div>
+          </section>
+          <!-- END:: 8 Products -->
           </div>
+          <div class="tab-pane fade" id="pills-item2" role="tabpanel" aria-labelledby="pills-item2-tab" tabindex="0">
+            <!-- START:: 4 Products -->
+            <section class="container mt-2">
+              <div class = "collection-list mt-4 row gx-0 gy-3">
+                  
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- END:: 4 Products -->
+          </div>
+          <div class="tab-pane fade" id="pills-item3" role="tabpanel" aria-labelledby="pills-item3-tab" tabindex="0">
+            <!-- START:: 3 Products -->
+            <section class="container mt-2">
+              <div class = "collection-list mt-4 row gx-0 gy-3">
+        
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- END:: 3 Products -->
+          </div>
+          <div class="tab-pane fade" id="pills-item4" role="tabpanel" aria-labelledby="pills-item4-tab" tabindex="0">
+            <!-- START:: 4 Products -->
+            <section class="container mt-2">
+              <div class = "collection-list mt-4 row gx-0 gy-3">
+                  
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+          
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                      <div class = "collection-img position-relative">
+                      <img src="http://via.placeholder.com/350x230" class="img-fluid" alt="Placeholder Image">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <div class = "rating mt-3">
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                              <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                          </div>
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+
+                          <div class="mt-2 d-flex justify-content-center gap-2">
+                              <div><a href="cart.html" class="btn btn-primary btn-sm">Cart</a></div>
+                              <div><a href="wishlist.html"><i class="fa fa-heart" style="color: red;"></i></a></div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- END:: 4 Products -->
+          </div>
+        </div>
+
       </div>
-  </section>
-    <!-- END:: Product Tabs -->
+    </section>
+    <!-- END:: New Product Tabs -->
 
     <!-- START:: Sales Banner -->
     <section class="container-fluid sales-banner mt-4">

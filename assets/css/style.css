@@ -112,6 +112,10 @@
     align-items: start !important;
   }
 
+  .cart-img img{
+    width: 35% !important;
+  }
+
   }
   
 /* slider */
@@ -238,6 +242,10 @@
   width: 25%;
 }
 
+.cart-total{
+  width: 75%;
+}
+
 @media (max-width: 991px){
   .popular-images-container >div img{
     width: 35%;
@@ -247,6 +255,16 @@
     display: flex;
     gap: 2rem;
     margin: 10px 0;
+  }
+  
+  .cart-container > div{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .cart-img img{
+    width: 15%;
   }
 }
 /* Banner */
@@ -366,3 +384,4 @@ i {
   transform: scale(0.95);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+

@@ -200,6 +200,213 @@
     </section>
     <!-- BreadCrumb -->
 
+    <!-- info -->
+    <section class="container-fluid mt-3 p-4">
+      <div class="container">
+          
+          <div class = "title pt-3 d-flex justify-content-center">
+              <h2 class = "position-relative ms-4">Checkout</h2>
+          </div>
+      
+          <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat provident quas deserunt mollitia dicta labore non, totam impedit. Facilis vitae similique illo nemo ex quod ut, labore, tenetur eum veritatis nihil. Odit incidunt facere sed hic. Suscipit ex placeat, dolorem quis, sequi ab reprehenderit quod consequuntur rem itaque, sint doloremque minus esse cumque soluta totam et vel odio illum. Fuga.
+          </p>
+      </div>
+  </section>
+  <!-- info -->
+
+
+  <!-- START:: Checkout -->
+  <section class="container">
+    <div class="row">
+      <!-- Form -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <form action="#" method="post">
+          <!-- Firstname and lastname -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+              </div>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+          </div>
+          <!-- Address -->
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          </div>
+          <!-- Address 2 -->
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+          <!-- Country Apartment and Zip Code -->
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="form-control custom-select d-block w-100" id="country" required>
+                <option value="">Choose...</option>
+                <option>Pakistan</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="form-control custom-select d-block w-100" id="state" required>
+                <option value="">Choose...</option>
+                <option>Punjab</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <!-- Checkboxes -->
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping to same billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+          <!-- Payments -->
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="container w-75 mt-4 d-flex justify-content-between d-block my-3">
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+              <i class="fa-brands fa-cc-paypal fa-2xl"></i>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+              </div>
+            </div>
+            
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+              <i class="fa-brands fa-stripe fa-2xl"></i>
+              <div class="custom-control custom-radio">
+                <input id="stripe" name="paymentMethod" type="radio" class="custom-control-input" required>
+              </div>
+            </div>
+            
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+              <i class="fa-solid fa-credit-card fa-2xl"></i>
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              </div>
+            </div>
+          </div>
+          <!-- card info -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue Payment</button>
+
+          <!-- End -->
+        </form>
+      </div>
+      <!-- Form -->
+      
+      <div class="col-lg-6 order-1 order-lg-2 bg-light p-2 h-75 mb-4">
+        <div class = "title pt-3 d-flex justify-content-center">
+            <h2 class = "position-relative ms-4">Your Items</h2>
+        </div>
+        <!-- Product Name and Price -->
+        <!-- 1 -->
+        <div class="row mt-3 cart-container">
+          <div class="col-lg-3 d-flex justify-content-end cart-img">
+            <img src="http://via.placeholder.com/50x50" class="img-fluid" alt="Placeholder Image">
+          </div>
+          <div class="col-lg-5 d-flex align-items-center">The Product Name Goes Here</div>
+          <div class="col-lg-2 d-flex justify-content-start align-items-center">$3000</div>
+        </div>
+        <!-- 2 -->
+        <div class="row mt-3 cart-container">
+          <div class="col-lg-3 d-flex justify-content-end cart-img">
+            <img src="http://via.placeholder.com/50x50" class="img-fluid" alt="Placeholder Image">
+          </div>
+          <div class="col-lg-5 d-flex align-items-center">The Product Name Goes Here</div>
+          <div class="col-lg-2 d-flex justify-content-start align-items-center">$3000</div>
+        </div>
+  
+        <!-- Discount Code -->
+        <form action="#" method="post">
+          <!-- Discount Container -->
+          <section class="container mt-4 w-75">
+            <div class="row">
+              <!-- Form -->
+              <div class="col-lg-10">
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Have a Code?">
+                </div>
+              </div>
+              <!-- BTN -->
+              <div class="col-lg-2">
+                <button class="btn btn-primary">Apply</button>
+              </div>
+            </div>
+          </section>
+          <!-- Discount Container -->
+        </form>
+        
+        <!-- Subtotal shipping and total -->
+        <div class="container mt-4 d-flex flex-column justify-content-center align-items-center">
+          
+          <div class="d-flex cart-total justify-content-between">
+            <h5>Subtotal</h5>
+            <p>$300</p>
+          </div>
+
+          <div class="d-flex cart-total justify-content-between">
+            <h5>Shipping</h5>
+            <p>Free</p>
+          </div>
+
+          <div class="d-flex cart-total justify-content-between">
+            <h5>Total</h5>
+            <p>$300</p>
+          </div>
+
+        </div>
+        <!-- end -->
+      </div>
+
+    </div>
+  </section>
+  <!-- END:: Checkout -->
+
    <!-- START:: Footer -->
   <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
     <!-- Section: Social media -->

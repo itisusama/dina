@@ -107,7 +107,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="allproducts.html">All Products</a>
                         <a class="dropdown-item" href="single-products.html">Product Details</a>
-                        <a class="dropdown-item" href="checkout">check Out</a>
+                        <a class="dropdown-item" href="checkout.html">check Out</a>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="allproducts.html">All Products</a>
                     <a class="dropdown-item" href="single-products.html">Product Details</a>
-                    <a class="dropdown-item" href="checkcout">check Out</a>
+                    <a class="dropdown-item" href="checkout.html">check Out</a>
                 </div>
             </div>
             <!-- 4 -->
@@ -201,205 +201,219 @@
     </section>
     <!-- BreadCrumb -->
 
+
+    <!-- info -->
+    <section class="container-fluid mt-3 mb-5 p-4">
+      <div class="container">
+          
+          <div class = "title pt-3 d-flex justify-content-center">
+              <h2 class = "position-relative ms-4">FAQ Heading</h2>
+          </div>
+      
+          <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab nostrum incidunt hic facilis magni facere repellat dolorum, quo dolore officia cupiditate necessitatibus, veniam maiores totam adipisci! Suscipit obcaecati laudantium nesciunt harum reiciendis illo aspernatur molestias ullam laboriosam incidunt! Iusto beatae sunt possimus illo, at itaque reprehenderit nisi obcaecati distinctio, asperiores debitis? Magnam saepe voluptate obcaecati provident aut aspernatur aliquid totam fuga consequatur, exercitationem quae enim itaque similique ad quod, labore autem ipsum modi odit mollitia dignissimos. Impedit tempora repudiandae incidunt recusandae, repellat nam et atque consequuntur eos harum vitae. Fuga reiciendis ducimus numquam quasi dicta, aliquam ipsa minima sit nemo modi doloribus fugiat, eaque illum corrupti libero error delectus, cum expedita voluptatibus id ex inventore aliquid accusantium quaerat. Doloribus, consequatur.
+          </p>
+      </div>
+  </section>
+  <!-- info -->
+
     <!-- START:: FAQ Section -->
     <Section class="container-fluid mt-4">
-        <div class="container">
-            <div class="row">
-                <!-- 1 -->
-                <div class="col-lg-6">
-                    <div>
-                      <div class = "title pt-3 d-flex justify-content-center">
-                        <h2 class = "position-relative ms-4">FAQ Type</h2>
-                      </div>
-                        <section class="mb-4">
-                          <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Question #1
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi debitis mollitia vitae, adipisci earum eveniet voluptatibus quam dolore nisi!
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Question #2
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a culpa doloremque reprehenderit neque impedit veniam necessitatibus quaerat consectetur consequatur.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Question #3
-                                </button>
-                              </h2>
-                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, laboriosam natus eaque deleniti iure distinctio placeat voluptatem odit vero consectetur?
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                    </div>
+      <div class="container mb-5 mt-5">
+        <div class="row">
+    
+          <div class="col-md-6 mb-4"> <!-- Adjusted width to col-md-6 -->
+            <div class="card">
+              <div class="card-header" id="livingRoomHeader">
+                <h2 class="mb-0">
+                  <button class="btn " type="button" data-toggle="collapse" data-target="#livingRoomCollapse" aria-expanded="true" aria-controls="livingRoomCollapse">
+                    Your Order
+                  </button>
+                </h2>
+              </div>
+              <div id="livingRoomCollapse" class="collapse show" aria-labelledby="livingRoomHeader" data-parent="#faqAccordion">
+                <div class="card-body">
+                  <!-- FAQ Item 1 - Where is my order? -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq1Collapse" aria-expanded="true" aria-controls="faq1Collapse">
+                        Where is my order?
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq1Collapse" aria-expanded="true" aria-controls="faq1Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faq1Collapse" class="collapse" aria-labelledby="faq1Header" data-parent="#livingRoomCollapse">
+                    <p>Once your order has been shipped, you will receive an email with a tracking number. You can use this tracking number to monitor the status of your delivery.</p>
+                  </div>
+    
+                  <!-- FAQ Item 2 - How can I make a complaint? -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq2Collapse" aria-expanded="true" aria-controls="faq2Collapse">
+                        Complaint?
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq2Collapse" aria-expanded="true" aria-controls="faq2Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faq2Collapse" class="collapse" aria-labelledby="faq2Header" data-parent="#livingRoomCollapse">
+                    <p>If you have any issues or complaints about your order, please contact our customer service team through our <a href="contact.html">contact page</a>. We will be happy to assist you.</p>
+                  </div>
+    
+                  <!-- Add more FAQ items as needed -->
                 </div>
-                <!-- 2 -->
-                <div class="col-lg-6">
-                  <div>
-                    <div class = "title pt-3 d-flex justify-content-center">
-                      <h2 class = "position-relative ms-4">FAQ Type</h2>
-                    </div>
-                    <section>
-                      <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Question #1
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi debitis mollitia vitae, adipisci earum eveniet voluptatibus quam dolore nisi!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Question #2
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a culpa doloremque reprehenderit neque impedit veniam necessitatibus quaerat consectetur consequatur.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Question #3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, laboriosam natus eaque deleniti iure distinctio placeat voluptatem odit vero consectetur?
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                </div>
-                </div>
-                <!-- 3 -->
-                <div class="col-lg-6">
-                  <div>
-                    <div class = "title pt-3 d-flex justify-content-center">
-                      <h2 class = "position-relative ms-4">FAQ Type</h2>
-                    </div>
-                    <section>
-                      <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Question #1
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi debitis mollitia vitae, adipisci earum eveniet voluptatibus quam dolore nisi!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Question #2
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a culpa doloremque reprehenderit neque impedit veniam necessitatibus quaerat consectetur consequatur.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Question #3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, laboriosam natus eaque deleniti iure distinctio placeat voluptatem odit vero consectetur?
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                </div>
-                </div>
-                <!-- 4 -->
-                <div class="col-lg-6">
-                  <div>
-                    <div class = "title pt-3 d-flex justify-content-center">
-                      <h2 class = "position-relative ms-4">FAQ Type</h2>
-                    </div>
-                    <section>
-                      <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Question #1
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi debitis mollitia vitae, adipisci earum eveniet voluptatibus quam dolore nisi!
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Question #2
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a culpa doloremque reprehenderit neque impedit veniam necessitatibus quaerat consectetur consequatur.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Question #3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, laboriosam natus eaque deleniti iure distinctio placeat voluptatem odit vero consectetur?
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                </div>
-                </div>
-            
+              </div>
             </div>
+          </div>
+    
+          <!-- Section 2 - Delivery -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header" id="deliveryHeader">
+                <h2 class="mb-0">
+                  <button class="btn " type="button" data-toggle="collapse" data-target="#deliveryCollapse" aria-expanded="true" aria-controls="deliveryCollapse">
+                    Delivery
+                  </button>
+                </h2>
+              </div>
+              <div id="deliveryCollapse" class="collapse show" aria-labelledby="deliveryHeader" data-parent="#faqAccordion">
+                <div class="card-body">
+                  <!-- FAQ Item 1 - Delivery Options -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery1Collapse" aria-expanded="true" aria-controls="faqDelivery1Collapse">
+                        Delivery Options
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery1Collapse" aria-expanded="true" aria-controls="faqDelivery1Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faqDelivery1Collapse" class="collapse" aria-labelledby="faqDelivery1Header" data-parent="#deliveryCollapse">
+                    <p>We offer various delivery options, including standard and express delivery. Choose the one that suits you best.</p>
+                  </div>
+    
+                  <!-- FAQ Item 2 - Tracking Orders -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery2Collapse" aria-expanded="true" aria-controls="faqDelivery2Collapse">
+                        Tracking Orders
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery2Collapse" aria-expanded="true" aria-controls="faqDelivery2Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faqDelivery2Collapse" class="collapse" aria-labelledby="faqDelivery2Header" data-parent="#deliveryCollapse">
+                    <p>Once your order is shipped, you will receive a tracking number to monitor the delivery status. You can use this tracking number on our website to track your order.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
+    
+        <!-- New Row for Payment and Refunds & Returns -->
+        <div class="row mt-4">
+    
+          <!-- Section 3 - Payment -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header" id="paymentHeader">
+                <h2 class="mb-0">
+                  <button class="btn " type="button" data-toggle="collapse" data-target="#paymentCollapse" aria-expanded="true" aria-controls="paymentCollapse">
+                    Payment
+                  </button>
+                </h2>
+              </div>
+              <div id="paymentCollapse" class="collapse show" aria-labelledby="paymentHeader" data-parent="#faqAccordion">
+                <div class="card-body">
+                  <!-- FAQ Item 1 - Payment Methods -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment1Collapse" aria-expanded="true" aria-controls="faqPayment1Collapse">
+                        Payment Methods
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment1Collapse" aria-expanded="true" aria-controls="faqPayment1Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faqPayment1Collapse" class="collapse" aria-labelledby="faqPayment1Header" data-parent="#paymentCollapse">
+                    <p>We accept various payment methods, including credit cards, PayPal, and other online payment services.</p>
+                  </div>
+    
+                  <!-- FAQ Item 2 - Payment Security -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment2Collapse" aria-expanded="true" aria-controls="faqPayment2Collapse">
+                        Payment Security
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment2Collapse" aria-expanded="true" aria-controls="faqPayment2Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faqPayment2Collapse" class="collapse" aria-labelledby="faqPayment2Header" data-parent="#paymentCollapse">
+                    <p>Your payment information is secure. We use encryption technology to protect your personal and financial information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Section 4 - Refunds & Returns -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header" id="returnsHeader">
+                <h2 class="mb-0">
+                  <button class="btn " type="button" data-toggle="collapse" data-target="#returnsCollapse" aria-expanded="true" aria-controls="returnsCollapse">
+                    Refunds & Returns
+                  </button>
+                </h2>
+              </div>
+              <div id="returnsCollapse" class="collapse show" aria-labelledby="returnsHeader" data-parent="#faqAccordion">
+                <div class="card-body">
+                  <!-- FAQ Item 1 - Return Policy -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns1Collapse" aria-expanded="true" aria-controls="faqReturns1Collapse">
+                        Return Policy
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns1Collapse" aria-expanded="true" aria-controls="faqReturns1Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faqReturns1Collapse" class="collapse" aria-labelledby="faqReturns1Header" data-parent="#returnsCollapse">
+                    <p>Our return policy allows you to return items within 30 days of purchase. Please review our <a href="return-policy.html">return policy</a> for more details.</p>
+                  </div>
+    
+                  <!-- FAQ Item 2 - Refund Process -->
+                  <div class="faq-item d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                      <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns2Collapse" aria-expanded="true" aria-controls="faqReturns2Collapse">
+                        Refund Process
+                      </button>
+                    </h5>
+                    <button class="btn  plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns2Collapse" aria-expanded="true" aria-controls="faqReturns2Collapse">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div id="faqReturns2Collapse" class="collapse" aria-labelledby="faqReturns2Header" data-parent="#returnsCollapse">
+                    <p>Our refund process is designed to ensure a smooth and timely return of funds in case of a return. Refunds are typically processed within 5 business days.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
     </Section>
     <!-- END:: FAQ Section -->
 
@@ -524,10 +538,24 @@
     <!-- Copyright -->
   </footer>
     <!-- END:: Footer -->
-    <script src="assets/js/jquery-3.6.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="assets/js/nav.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.js"></script>
+
+    <script>
+      // Wait for the document to be ready
+      $(document).ready(function() {
+        // Add click event listeners to the FAQ buttons
+        $('.plus-minus-btn').click(function() {
+          // Toggle the icon (plus/minus)
+          $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+
+          // Toggle the collapse element associated with the button
+          $($(this).attr('data-target')).collapse('toggle');
+        });
+      });
+  </script>
 </body>
 </html>

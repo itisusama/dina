@@ -317,6 +317,60 @@
   width: 25%;
 }
 
+/* counter */
+.qty .count {
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 19px;
+  font-weight: 700;
+  line-height:10px;
+  padding: 0 2px;
+  min-width: 35px;
+  text-align: center;
+}
+.qty .plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 25px;
+  height: 25px;
+  font: 19px;
+  text-align: center;
+  border-radius: 50%;
+  }
+.qty .minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 25px;
+  height: 25px;
+  font: 19px;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+/*Prevent text selection*/
+.qty input{  
+  border: 0;
+  width: 2%;
+}
+.qty input::-webkit-outer-spin-button,
+.qty input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.qty input:disabled{
+  background-color:white;
+}
+
+.mobile-desc{
+  display: none;
+}
+
 @media (max-width: 767px){
   .products-top{
     display: flex;
@@ -329,6 +383,32 @@
   .products-top-sort, .products-top-search{
     width: 100%;
   } 
+
+  .cart-table-head{
+    display: none;
+  }
+
+  .shop-cart-container >div{
+    display: flex;
+    justify-content: center;
+  }
+
+  .qty{
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .shop-cart-img img{
+    width: 100%;
+  }
+
+  .mobile-desc{
+    display: block;
+  }
+
+  .mobile-margin{
+    margin-bottom: 20px;
+  }
 }
 
 /* Bread Crumb */
@@ -384,4 +464,3 @@ i {
   transform: scale(0.95);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-

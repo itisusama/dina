@@ -19,3 +19,20 @@ closeSearchBox.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
 });
+
+// Counter
+      function decreaseQuantity(id) {
+          var quantityInput = document.getElementById(id);
+          var currentValue = parseInt(quantityInput.value, 10);
+          
+          if (currentValue > 1) {
+              quantityInput.value = currentValue - 1;
+          }
+      }
+  
+      function increaseQuantity(id) {
+          var quantityInput = document.getElementById(id);
+          var currentValue = parseInt(quantityInput.value, 10);
+          
+          quantityInput.value = currentValue + 1;
+      }

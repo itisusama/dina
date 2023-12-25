@@ -2388,7 +2388,7 @@ $range.ionRangeSlider({
     max: max,
     from: 0,
     to: 500,
-  prefix: '£',
+  prefix: '$',
     onStart: updateInputs,
     onChange: updateInputs,
     step: 1,

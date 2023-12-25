@@ -233,8 +233,7 @@
 </div>
         <!-- card right -->
         <div class = "product-content">
-          <h2 class = "product-title">nike shoes</h2>
-          <a href = "#" class = "product-link">visit nike store</a>
+          <h2 class = "product-title">Product Name Goes Here</h2>
           <div class = "product-rating">
             <i class = "fas fa-star"></i>
             <i class = "fas fa-star"></i>
@@ -264,10 +263,10 @@
 
           <div class = "purchase-info">
             <input type = "number" min = "0" value = "1">
-            <button type = "button" class = "btn_3">
-              Add to Cart <i class = "fas fa-shopping-cart"></i>
+            <button type = "button" class = "btn btn-primary">
+              Add to Cart <i class = "fa fa-shopping-cart fa-lg" style="color: black;"></i>
             </button>
-            <button type = "button" class = "btn_3">Wishlist <i class = "fas fa-heart"></i></button>
+            <button type = "button" class="btn btn-primary" >Wishlist <i class = "fa-regular fa-heart fa-lg" style="color: red;"></i></button>
           </div>
 
         </div>
@@ -814,31 +813,7 @@
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="assets/js/jquery.validate.min.js"></script> -->
-
-    <script>
-
-    $(document).ready(function () {
-        // Get references to elements
-        var showcase = $(".img-showcase");
-        var thumbnails = $(".img-item a");
-
-        // Add click event listeners to each thumbnail
-        thumbnails.on("click", function (event) {
-          event.preventDefault();
-
-          // Change the showcase image source to the clicked thumbnail's source
-          showcase.find("img").attr("src", $(this).find("img").attr("src"));
-        });
-      });
-
-    $(document).ready(function () {
-      $('.nav-tabs a').on('click', function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-      });
-    });
-    </script>
+    <script src="assets/js/jquery.validate.min.js"></script>
 
 </body>
 </html>

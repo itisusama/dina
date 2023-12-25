@@ -60,3 +60,25 @@ document.addEventListener('DOMContentLoaded', function() {
     setupDropdowns('.dropdown', false);
     setupDropdowns('.dropend', true);
   });
+
+  // Product page Thumbnail
+  $(document).ready(function () {
+    // Get references to elements
+    var showcase = $(".img-showcase");
+    var thumbnails = $(".img-item a");
+
+    // Add click event listeners to each thumbnail
+    thumbnails.on("click", function (event) {
+      event.preventDefault();
+
+      // Change the showcase image source to the clicked thumbnail's source
+      showcase.find("img").attr("src", $(this).find("img").attr("src"));
+    });
+  });
+
+$(document).ready(function () {
+  $('.nav-tabs a').on('click', function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+});

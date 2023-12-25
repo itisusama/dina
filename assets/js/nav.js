@@ -36,3 +36,27 @@ closeNav.addEventListener('click', () => {
           
           quantityInput.value = currentValue + 1;
       }
+
+// Toggler Working
+document.addEventListener('DOMContentLoaded', function() {
+    function setupDropdowns(selector, positionRight) {
+      var dropdowns = document.querySelectorAll(selector);
+
+      dropdowns.forEach(function(dropdown) {
+        var button = dropdown.querySelector('.dropdown-toggle');
+        var menu = dropdown.querySelector('.dropdown-menu');
+
+        button.addEventListener('click', function() {
+          menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+          if (positionRight) menu.style.left = button.offsetWidth + 'px';
+        });
+
+        document.addEventListener('click', function(event) {
+          if (!dropdown.contains(event.target)) menu.style.display = 'none';
+        });
+      });
+    }
+
+    setupDropdowns('.dropdown', false);
+    setupDropdowns('.dropend', true);
+  });

@@ -56,9 +56,10 @@ a, a:focus, a:active{
 
 #mobile_search_box{
     position: absolute;
-    top: 10px;
+    top: 0;
     z-index: 99;
     display: none;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .discount-card img{

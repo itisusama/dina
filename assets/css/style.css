@@ -561,3 +561,38 @@ i {
     font-size: 20px !important;
   }
 }
+
+/* Cards Shadow or border */
+.best > div:last-child, .feat > div:last-child, .new > div:last-child{
+  width: 100%;
+  margin-top: -18px;
+  padding: 10px 0;
+  box-shadow: 1px 0px 26px 7px rgba(0,0,0,0.04) inset;
+}
+
+.best, .feat, .new {
+  transition: transform 0.3s ease-in-out;
+}
+
+.best:hover, .feat:hover, .new:hover {
+  transform: scale(1.05);
+}
+
+/* for special pages */
+@media (max-width: 767px){
+  .special-pages .best > div:last-child, .special-pages .feat > div:last-child,  .special-pages .new > div:last-child{
+  width: 70%;
+  }
+}
+
+@media (max-width: 425px){
+  .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
+  width: 97%;
+  }
+}
+
+@media (max-width: 424px){
+  .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
+  width: 100%;
+  }
+}

@@ -469,8 +469,8 @@ i {
 /* New Hero */
 :root {
   --color: #4973ff;
+  --heroheight: 67vh;
 }
-
 .content {
   max-width: 600px;
   margin: 0 auto;
@@ -481,7 +481,7 @@ i {
   position: relative;
   background: #f8f9fa;
   color: white;
-  height: 62vh;
+  height: var(--heroheight);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -508,7 +508,7 @@ i {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 62vh;
+  height: var(--heroheight);
   z-index: 1;
 }
 .waves {
@@ -586,10 +586,28 @@ i {
   transform: scale(1.05);
 }
 
+/* Heor */
+.dina-hero-right img{
+  width: 100%;
+  /* height: 30vh; */
+}
+
+@media (max-width: 991px){
+  .dina-hero-right img{
+    width: 100%;
+    height: 30vh;
+  }
+}
+
 /* for special pages */
 @media (max-width: 767px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child,  .special-pages .new > div:last-child{
   width: 70%;
+  }
+
+  .dina-hero-right img{
+    width: 100%;
+    height: auto;
   }
 }
 

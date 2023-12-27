@@ -568,6 +568,10 @@ i {
     margin-top: 10px !important;
     font-size: 20px !important;
   }
+
+  :root {
+    --heroheight: 54vh !important;
+  }
 }
 
 /* Cards Shadow or border */
@@ -615,6 +619,11 @@ i {
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 97%;
   }
+
+  .discount-card img{
+    height: 36vh !important
+  }
+
 }
 
 @media (max-width: 424px){

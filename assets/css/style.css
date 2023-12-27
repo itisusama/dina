@@ -556,12 +556,6 @@ i {
   }
 }
 
-/* Discount card image media query */
-@media (max-width: 375px){
-  .discount-card img{
-    height: 35vh !important
-  }
-}
 
 @media (max-width: 320px){
   .fa-lg{
@@ -629,5 +623,18 @@ i {
 @media (max-width: 424px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 100%;
+  }
+}
+
+/* Discount card image media query */
+@media (max-width: 400px){
+  .discount-card img{
+    height: 28vh !important
+  }
+}
+
+@media (max-width: 375px){
+  .discount-card img{
+    height: 34vh !important
   }
 }

@@ -481,7 +481,7 @@ i {
   position: relative;
   background: #f8f9fa;
   color: white;
-  height: 80vh;
+  height: 62vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -508,7 +508,7 @@ i {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 80vh;
+  height: 62vh;
   z-index: 1;
 }
 .waves {

@@ -562,10 +562,6 @@ i {
     margin-top: 10px !important;
     font-size: 20px !important;
   }
-
-  :root {
-    --heroheight: 54vh !important;
-  }
 }
 
 /* Cards Shadow or border */
@@ -609,13 +605,50 @@ i {
   }
 }
 
+
+/* Discount card image media query */
+  .discount-card img{
+    height: 35vh !important
+  }
+@media (max-width: 1400px){
+  .discount-card img{
+    height: 48vh !important
+  }
+}
+
+@media (max-width: 1200px){
+  .discount-card img{
+    height: 42vh !important
+  }
+}
+
+@media (max-width: 991px){
+  .discount-card img{
+    height: 48vh !important
+  }
+}
+
+@media (max-width: 767px){
+  .discount-card img{
+    height: 43vh !important
+  }
+}
+
+@media (max-width: 576px){
+  .discount-card img{
+    height: 40vh !important
+  }
+}
+
+@media (max-width: 400px){
+  .discount-card img{
+    height: 35vh !important
+  }
+}
+
 @media (max-width: 425px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 97%;
-  }
-
-  .discount-card img{
-    height: 36vh !important
   }
 
 }
@@ -623,18 +656,5 @@ i {
 @media (max-width: 424px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 100%;
-  }
-}
-
-/* Discount card image media query */
-@media (max-width: 400px){
-  .discount-card img{
-    height: 28vh !important
-  }
-}
-
-@media (max-width: 375px){
-  .discount-card img{
-    height: 34vh !important
   }
 }

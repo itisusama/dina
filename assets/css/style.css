@@ -610,9 +610,14 @@ i {
   .discount-card img{
     height: 35vh !important
   }
+
 @media (max-width: 1400px){
   .discount-card img{
     height: 48vh !important
+  }
+
+  .hero, .clouds{
+    height: 88vh;
   }
 }
 
@@ -620,11 +625,19 @@ i {
   .discount-card img{
     height: 42vh !important
   }
+
+  .hero, .clouds{
+    height: 82vh;
+  }
 }
 
 @media (max-width: 991px){
   .discount-card img{
     height: 48vh !important
+  }
+
+  .hero, .clouds{
+    height: 65vh;
   }
 }
 

@@ -634,9 +634,15 @@ i {
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 585px){
   .discount-card img{
     height: 40vh !important
+  }
+}
+
+@media (max-width: 485px){
+  .discount-card img{
+    height: 35vh !important
   }
 }
 

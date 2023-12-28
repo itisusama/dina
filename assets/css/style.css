@@ -632,36 +632,8 @@ i {
 }
 
 @media (max-width: 991px){
-  .discount-card img{
-    height: 48vh !important;
-  }
-
   .hero, .clouds{
     height: 65vh;
-  }
-}
-
-@media (max-width: 767px){
-  .discount-card img{
-    height: 43vh !important;
-  }
-}
-
-@media (max-width: 585px){
-  .discount-card img{
-    height: 40vh !important;
-  }
-}
-
-@media (max-width: 485px){
-  .discount-card img{
-    height: 38vh !important;
-  }
-}
-
-@media (max-width: 400px){
-  .discount-card img{
-    height: 35vh !important;
   }
 }
 

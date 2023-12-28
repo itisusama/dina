@@ -644,7 +644,6 @@ i {
   top: 50%; 
   transform: translate(-50%, -50%); 
   text-align: center; 
-  text-shadow: 2px 2px black;
 }
 
 .discount-card img{
@@ -655,20 +654,10 @@ i {
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 97%;
   }
-
-  .discount-card >div{
-    font-size: 15px;
-  }
 }
 
 @media (max-width: 424px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 100%;
-  }
-}
-
-@media (max-width: 320px){
-  .discount-card >div{
-    font-size: 12px;
   }
 }

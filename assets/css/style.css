@@ -469,7 +469,6 @@ i {
 /* New Hero */
 :root {
   --color: #4973ff;
-  --heroheight: 67vh;
 }
 .content {
   max-width: 600px;
@@ -481,7 +480,7 @@ i {
   position: relative;
   background: #f8f9fa;
   color: white;
-  height: var(--heroheight);
+  height: 64vh !important;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -508,7 +507,7 @@ i {
   bottom: 0;
   left: 0;
   right: 0;
-  height: var(--heroheight);
+  height: 64vh !important;
   z-index: 1;
 }
 .waves {
@@ -586,13 +585,9 @@ i {
   /* height: 30vh; */
 }
 
-@media (max-width: 991px){
-  .dina-hero-right img{
-    width: 100%;
-    height: 30vh;
-  }
+.dina-hero-right img{
+  border-radius: 7px !important;
 }
-
 /* for special pages */
 @media (max-width: 767px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child,  .special-pages .new > div:last-child{
@@ -603,6 +598,10 @@ i {
     width: 100%;
     height: auto;
   }
+
+  .hero, .clouds{
+    height: 50vh !important;
+  }
 }
 
 
@@ -611,39 +610,31 @@ i {
     height: 35vh !important
   }
 
-@media (max-width: 1400px){
-  .discount-card img{
-    height: 48vh !important
-  }
-
-  .hero, .clouds{
-    height: 88vh;
-  }
-}
-
 @media (max-width: 1200px){
   .discount-card img{
     height: 42vh !important;
   }
 
   .hero, .clouds{
-    height: 82vh;
+    height: 50vh !important;
   }
 }
 
-@media (max-width: 991px){
-  .hero, .clouds{
-    height: 65vh;
-  }
-}
 
 /* discount card */
+.discount-card img{
+  height: 30vh !important;
+}
 .discount-card >div{
   position: absolute; 
   left: 50%; 
   top: 50%; 
   transform: translate(-50%, -50%); 
   text-align: center; 
+}
+.discount-card >div h4, .discount-card >div p{
+  border-radius: 7px; 
+  background-color: rgba(255, 255, 255, 0.479); 
 }
 
 .discount-card img{
@@ -654,10 +645,39 @@ i {
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 97%;
   }
+
+  .discount-card >div, .icons-and-details{
+   font-size: small; 
+  }
+
+  .hero, .clouds{
+    height: 44vh !important;
+  }
 }
 
 @media (max-width: 424px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 100%;
   }
+}
+
+@media (max-width: 375px){
+  
+  .discount-card >div h4, .icons-and-details h6, .icons-and-details i{
+    font-size: 16px; 
+   }
+
+   .discount-card >div p, .icons-and-details p{
+    font-size: 12px; 
+   }
+}
+
+@media (max-width: 320px){
+  .discount-card >div h4, .icons-and-details h6{
+    font-size: 12px; 
+   }
+
+   .discount-card >div p, .icons-and-details p{
+    font-size: 10px; 
+   }
 }

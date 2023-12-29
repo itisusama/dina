@@ -413,9 +413,7 @@
 
 /* Bread Crumb */
 .bc-banner{
-  background-image: url("https://international.bihk.de/fileadmin/eigene_dateien/auwi_bayern/eigene_dateien/images/header/Zoll.jpg");
-  /* background-image: url("https://via.placeholder.com/1366x350"); */
-  /* background-image: url("/assets/images/bg.svg"); */
+  background-image: url("../images/breadcrum.jpg");
   position: relative;
   background-repeat: no-repeat;
   height: 50vh;

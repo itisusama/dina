@@ -6,6 +6,7 @@
 
 :root{
   --blue: #0d6efd;
+  --color: #4973ff;
 }
 /* Home Overlay */
 .home-image-container {
@@ -110,10 +111,6 @@
     display: flex !important;
     flex-direction: column !important;
     align-items: start !important;
-  }
-
-  .cart-img img{
-    width: 35% !important;
   }
 
   }
@@ -262,10 +259,6 @@
     justify-content: center !important;
     align-items: center;
   }
-
-  .cart-img img{
-    width: 15%;
-  }
 }
 /* Banner */
 
@@ -371,6 +364,11 @@
   display: none;
 }
 
+.shop-cart-img img, .cart-img img{
+  width: 70px;
+  height: 70px;
+}
+
 @media (max-width: 767px){
   .products-top{
     display: flex;
@@ -429,8 +427,12 @@
   align-items: center;
 }
 
-.bc-banner >div{
-  position: absolute;
+.bc-banner >div h1, .bc-banner >div p{
+  text-align: center;
+  border-radius: 7px; 
+  background-color: rgba(255, 255, 255, 0.76); 
+  box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.77);
+  padding: 5px;
 }
 
 i {
@@ -466,9 +468,6 @@ i {
 }
 
 /* New Hero */
-:root {
-  --color: #4973ff;
-}
 .content {
   max-width: 600px;
   margin: 0 auto;
@@ -479,7 +478,7 @@ i {
   position: relative;
   background: #f8f9fa;
   color: white;
-  height: 64vh !important;
+  height: 64vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -506,7 +505,7 @@ i {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 64vh !important;
+  height: 64vh;
   z-index: 1;
 }
 .waves {
@@ -557,8 +556,8 @@ i {
 
 @media (max-width: 320px){
   .fa-lg{
-    margin-top: 10px !important;
-    font-size: 20px !important;
+    margin-top: 10px;
+    font-size: 20px;
   }
 }
 
@@ -581,13 +580,12 @@ i {
 /* Heor */
 .dina-hero-right img{
   width: 100%;
-  /* height: 30vh; */
 }
 
 .dina-hero-right img{
   border-radius: 7px !important;
 }
-/* for special pages */
+/* for special pages (category and Products) */
 @media (max-width: 767px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child,  .special-pages .new > div:last-child{
   width: 70%;
@@ -621,9 +619,6 @@ i {
 
 
 /* discount card */
-.discount-card img{
-  height: 30vh !important;
-}
 .discount-card >div{
   position: absolute; 
   left: 50%; 
@@ -632,17 +627,29 @@ i {
   text-align: center; 
 }
 .discount-card >div h4, .discount-card >div p{
+  color: black;
   border-radius: 7px; 
-  background-color: rgba(255, 255, 255, 0.479); 
+  background-color: rgba(255, 255, 255, 0.76); 
+  box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.77);
 }
 
 .discount-card img{
   border-radius: 7px;
 }
 
+@media (max-width: 600px){
+  .discount-card img{
+    height: 32vh !important
+  }
+}
+
 @media (max-width: 425px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 97%;
+  }
+
+  .discount-card img{
+    height: 33vh !important
   }
 
   .discount-card >div, .icons-and-details{
@@ -654,6 +661,7 @@ i {
   }
 }
 
+/* This is done for the cards width adjustment for some pages. Because I don't want to use new css file */
 @media (max-width: 424px){
   .special-pages .best > div:last-child, .special-pages .feat > div:last-child, .special-pages .new > div:last-child{
   width: 100%;

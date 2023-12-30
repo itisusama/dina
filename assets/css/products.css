@@ -1,5 +1,13 @@
+:root{
+  --golden:#ffc107;
+  --blue: #0d6efd; 
+}
 i{
-  color: #0d6efd;
+  color: var(--blue);
+}
+
+.fa-star, .fa-star-half-alt{
+  color: var(--golden);
 }
 /* Bread Crumb */
 .bc-banner{
@@ -19,8 +27,12 @@ i{
   align-items: center;
 }
 
-.bc-banner >div{
-  position: absolute;
+.bc-banner >div h1, .bc-banner >div p{
+  text-align: center;
+  border-radius: 7px; 
+  background-color: rgba(255, 255, 255, 0.76); 
+  box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.77);
+  padding: 5px;
 }
 .product-details{
     box-sizing: border-box;
@@ -32,7 +44,7 @@ i{
 }
 
 .card{
-    border: none !important;
+    border: none;
 }
 
 img{
@@ -100,7 +112,7 @@ img{
     opacity: 0.9;
 }
 .product-rating{
-    color: #ffc107;
+    color: var(--golden);
 }
 .product-rating span{
     font-weight: 600;

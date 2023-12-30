@@ -85,12 +85,9 @@ a, a:focus, a:active{
 }
 
 @media (max-width: 425px){
-    .top-nav-icons-email{
-        display: none !important;
+    .top-nav-icons >div:first-child{
+        display: none;
     } 
-    /* .top-nav-icons{
-        font-size: small;
-    } */
 
     .discount-card img{
         width: 100% !important;

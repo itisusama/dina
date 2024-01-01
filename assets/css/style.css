@@ -404,9 +404,10 @@
     display: block;
   }
 
-  .mobile-margin{
-    margin-bottom: 20px;
+  .dash-border{
+    border-bottom: 4px dashed #000;
   }
+  
 }
 
 /* Bread Crumb */
@@ -701,4 +702,11 @@ i {
    .discount-card >div p, .icons-and-details p{
     font-size: 10px; 
    }
+}
+/* wishlist making heart work on hover*/
+.best .fa-heart, .new .fa-heart, .feat .fa-heart {
+  color: transparent !important;
+}
+.best:hover .fa-heart, .new:hover .fa-heart, .feat:hover .fa-heart {
+  color: red !important;
 }

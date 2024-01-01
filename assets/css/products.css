@@ -224,6 +224,10 @@ img{
   
   @media (max-width: 991px) {
   
+    .product-imgs{
+      margin-top: 20px;
+    }
+    
     .product_description_area {
       margin-top: 0px;
       padding-bottom: 70px;

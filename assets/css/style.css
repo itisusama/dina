@@ -637,7 +637,7 @@ i {
   border-radius: 7px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 630px){
   .discount-card img{
     height: 32vh !important
   }
